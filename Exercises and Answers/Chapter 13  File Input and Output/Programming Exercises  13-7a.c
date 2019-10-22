@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
         printf("Could not open file %s for input\n", argv[1]);
         exit(EXIT_FAILURE);
     }
-    if ((f2 == fopen(argv[2], "r")) == NULL)
+    if ((f2 = fopen(argv[2], "r")) == NULL)
     {
         printf("Could not open file %s for input\n", argv[2]);
         exit(EXIT_FAILURE);
